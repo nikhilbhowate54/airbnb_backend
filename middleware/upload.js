@@ -16,6 +16,7 @@ const fileFilter = (req, file, cb) => {
   if (![".jpg", ".png", ".gif", ".jpeg"].includes(ext)) {
     return cb(new Error("only image you can add"), false);
   }
+   cb(null, true);
 };
 
 const upload = multer({
