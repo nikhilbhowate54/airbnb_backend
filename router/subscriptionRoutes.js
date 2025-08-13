@@ -2,7 +2,7 @@
 const express = require("express");
 const router = express.Router();
 const SubscriptionPlan = require("../models/SubscriptionPlan");
-const User = require("../models/User");
+const User = require("../models/users");
 const auth = require("../middleware/auth");
 
 // Host views all available plans
